@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/BWhiteAssociates/Space%20Game%20-%20web%20-%20Dependencies/_apis/build/status%2FBwnacsHub.mslearn-tailspin-spacegame-web-models?branchName=main)](https://dev.azure.com/BWhiteAssociates/Space%20Game%20-%20web%20-%20Dependencies/_build/latest?definitionId=9&branchName=main)
 
 # Contributing
 
