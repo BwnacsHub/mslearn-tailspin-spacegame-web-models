@@ -32,15 +32,14 @@ steps:
     arguments: '--no-build --configuration $(buildConfiguration)'
     versioningScheme: byPrereleaseNumber
     majorVersion: '1'
-    minorVersion: '1'
-    patchVersion: '2'
-  
+    minorVersion: '0'
+    patchVersion: '0'
+
 - task: NuGetCommand@2
-  displayName: 'Publish NuGet package'
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'    
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'a6399b98-04d8-42f6-852f-c4669a1d2f81'
     allowPackageConflicts: true
-    publishVstsFeed: 'ce975a81-fe81-4d2c-84d0-a9963861f9ff/76de3366-729a-4419-a516-c9ccac617307'
   condition: succeeded()
